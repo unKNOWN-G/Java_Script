@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Text Change</title>
+        <style type = "Text/css">
+            p{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                color: greenyellow;
+                align-content: center;
+                margin: 10%;
+            }
+        </style>
+        <script>
+            var count = 0;
+            function clicker()
+            {
+                document.getElementsByClassName('ping')[0].innerHTML = 'Hi'+`, Clicked ${count} times`;
+                count++;
+            }
+        </script>
+    </head>
+    <body style="background-color: black;" align="center">
+        <p class="ping">Error 404</p>
+        <button onclick="clicker()">Click me</button>
+    </body>
+</html>
